@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Italic</string>
+        </array>
         <array key="pokemon.ttf">
             <string>PokemonSolidNormal</string>
         </array>
@@ -382,11 +387,14 @@ slfkjfjkskjlfskjdkjgsjkgjks
                     </view>
                     <connections>
                         <outlet property="attackLbl" destination="FEo-iX-gYi" id="Hx2-YH-0ni"/>
+                        <outlet property="currentEvoImg" destination="RSJ-MB-Zvx" id="84j-HV-Mhc"/>
                         <outlet property="defenceLbl" destination="stE-U5-kgJ" id="FvO-wK-54f"/>
                         <outlet property="descriptionLbl" destination="cUU-hL-MyH" id="5AQ-d8-K4O"/>
+                        <outlet property="evoLbl" destination="G5m-HD-csD" id="g40-dw-lUd"/>
                         <outlet property="heightLbl" destination="Ztp-6X-jn4" id="vy9-hL-bKi"/>
                         <outlet property="mainImg" destination="ZSz-3Z-43H" id="paT-hA-p5U"/>
                         <outlet property="nameLbl" destination="E9l-9n-Gub" id="7mT-h4-IVZ"/>
+                        <outlet property="nextEvoImg" destination="N0o-gJ-6Wx" id="S1q-IP-0fh"/>
                         <outlet property="pokedexLbl" destination="PqT-J9-Fgk" id="xVP-wU-erm"/>
                         <outlet property="typeLbl" destination="zTW-iu-EoB" id="BPi-bV-Ngl"/>
                         <outlet property="weightLbl" destination="ivp-mV-sir" id="AcG-jj-VS2"/>

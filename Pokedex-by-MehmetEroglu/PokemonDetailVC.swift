@@ -29,7 +29,7 @@ class PokemonDetailVC: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLbl.text = pokemon.name
+        nameLbl.text = pokemon.name.capitalized
         
         var img = UIImage(named: "\(pokemon.pokedexId)")
         mainImg.image = img
@@ -47,6 +47,7 @@ class PokemonDetailVC: UIViewController{
         defenceLbl.text = pokemon.defense
         heightLbl.text = pokemon.height
         weightLbl.text = pokemon.weight
+        attackLbl.text = pokemon.attack
         pokedexLbl.text = "\(pokemon.pokedexId)"
         
         if pokemon.nextEvolutionId == "" {
@@ -55,6 +56,13 @@ class PokemonDetailVC: UIViewController{
         }else {
             nextEvoImg.isHidden = false
             nextEvoImg.image = UIImage(named: pokemon.nextEvolutionId)
+            
+            var str = "Next Evolution: \(pokemon.nextEvolutionTxt)"
+            
+            if pokemon.nextEvolutionLvl != "" {
+                str += " - LVL \(pokemon.nextEvolutionLvl)"
+            }
+            evoLbl.text = str
         }
         
     }
